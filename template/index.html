@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/style.css">
     <title>{{.Title}}</title>
 </head>
 <body>
@@ -9,12 +10,14 @@
     <h1>{{.Title}}</h1>
 
     <form action="/ascii-art" method="post">
+        
         <label for="text">Enter your text:</label><br>
+
         <textarea id="text" placeholder="type in here..." name="text" required></textarea><br><br>
 
         <select name="banner" required>
             
-            <option value="" >choose a banner</option>
+            <option value="" selected hidden>choose a banner</option>
             <option value="standard.txt" {{if eq .Banner "standard"}} selected {{end}}>standard</option>
             <option value="standard.txt" {{if eq .Banner "standard"}} selected {{end}}>shadow</option>
             <option value="standard.txt" {{if eq .Banner "standard"}} selected {{end}}>thinkertoy</option>
