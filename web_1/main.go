@@ -26,6 +26,7 @@ func homeHandler(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "Internal server error", http.StatusInternalServerError)
 		return
 	}
+	
 	banner := r.FormValue("banner")
 
 	Data := file{
