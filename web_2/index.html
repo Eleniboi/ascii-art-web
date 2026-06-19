@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud_Devops</title>
+</head>
+<body>
+    
+    <h1><em>Ascii-art-web</em></h1>
+
+    <form method="post" action="/ascii">
+
+        <textarea name="text" placeholder="enter text here..." ></textarea>
+
+        <select name="banner">
+            <option value="standard.txt" >standard</option>
+            <option value="shadow.txt" >shadow</option>
+            <option value="thinkertoy.txt" >thinkertoy</option>
+        </select>
+
+        <button type="submit">submit</button>
+    </form>
+
+    <pre>{{.Result}}</pre>
+</body>
+</html>
